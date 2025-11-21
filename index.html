@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Scrum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini-Sprint Agil</h1>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h2>Bienvenido a nuestro Proyecto Scrum</h2>
+    <p>Este proyecto fue desarrollado aplicando los principios y roles de la metodología ágil Scrum con el objetivo de mostrar tu CV en la web</p>
+  </section>
+
+  <section id="equipo" class="team-section">
+    <h2>Equipo de Trabajo</h2>
+
+    <div class="team-container">
+      <!-- Fernando -->
+      <div class="member" onclick="toggleInfo('fernando')">
+        <img src="Fernando.jpg" alt="Fernando" />
+        <h3>Fernando Quiguantar</h3>
+        <p class="role">Scrum Master</p>
+        <div id="fernando" class="info">
+          <p>Nuestro Scrum Master realizó el seguimiento del proyecto aplicando los lineamientos de Scrum, facilitando las reuniones y asegurando el cumplimiento de los procesos.</p>
+        </div>
+      </div>
+
+      <!-- Damian -->
+      <div class="member" onclick="toggleInfo('damian')">
+        <img src="Damian.jpg" alt="Damian" />
+        <h3>Damian Pillajo</h3>
+        <p class="role">Product Owner</p>
+        <div id="damian" class="info">
+          <p>Nuestro Product Owner gestionó el backlog del producto, definió los requerimientos y validó los avances asegurando que se cumplan las necesidades del proyecto.</p>
+        </div>
+      </div>
+
+      <!-- Paul -->
+      <div class="member" onclick="toggleInfo('paul')">
+        <img src="Paul.jpg" alt="Paul" />
+        <h3>Paul Pareja</h3>
+        <p class="role">Dev Team</p>
+        <div id="paul" class="info">
+          <p>Nuestro Dev Team desarrolló la landing page implementando el diseño, la estructura, los estilos y la lógica interactiva.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleInfo(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+  <main class="grid">
+    <section id="cv" class="card">
+        <h2>Datos personales</h2>
+
+        <p><strong>Nombre:</strong> Paul Pareja</p>
+        <p><strong>Correo:</strong> cpparejatp@puce.edu.ec</p>
+        <p><strong>GitHub:</strong> github.com/CristianPareja</p>
+        <p><strong>Teléfono:</strong> +593 995342333</p>
+
+        <h2>Perfil profesional</h2>
+        <p>Tecnólogo en formación en Desarrollo de Software con base en Ingeniería en Petróleos, orientado a la optimización de procesos operativos y técnicos. Experiencia en soporte técnico, automatización de tareas mediante scripting y desarrollo de aplicaciones web para la gestión de información. Capacidad para integrar conocimientos del sector petrolero con herramientas digitales enfocadas en el monitoreo de sistemas SCADA, y mantenimiento de infraestructura tecnológica.</p>
+
+        <h2>Habilidades técnicas</h2>
+        <ul class="skills">
+            <li>Lenguajes de programación: Python (Avanzado), JavaScript (Intermedio)</li>
+            <li>Desarrollo web: HTML, CSS</li>
+            <li>Bases de datos: PostgreSQL (Intermedio), SQL Server (Básico)</li>
+            <li>Sistemas operativos: Windows y Linux (Administración básica, scripting)</li>
+            <li>Redes y conectividad: Configuración de redes LAN/Wi-Fi</li>
+            <li>Herramientas de control de versiones: Git / GitHub</li>
+        </ul>
+
+        <h2>Proyectos destacados</h2>
+        <ul>
+            <li>Floydmusic – Gestor de inventarios (Python, PostgresSQL) Aplicación de escritorio desarrollada en Python, implementando patrones de diseño para la gestión de inventarios. Incluye filtros de búsqueda, funciones para añadir, modificar y eliminar ítems, conexión a una base de datos PostgresSQL y la generación en tiempo real de un registro de movimientos en formato .txt.</li>
+            <li>Kathmath – Videojuego de trivia (Python) Videojuego desarrollado en Python utilizando la librería Pygame, basado en un formato local de preguntas y respuestas almacenadas en un archivo .json. El proyecto hace uso de listas y diccionarios para la gestión de datos y la lógica del juego.</li>
+            <li>Alumvida – Página web (HTML, CSS, JS, Design Thinking) Alumvida es una página web local creada para una empresa funeraria ficticia. Diseñada mediante la metodología Design Thinking y desarrollada con HTML5, CSS y JavaScript.</li>
+        </ul>
+
+        <h2>Experiencia</h2>
+        <ul>
+            <li>Pontificia Universidad católica del Ecuador | Pasante del área de informática Oct 2025 – Actualidad</li>
+            <li>- Soporte técnico a usuarios: restablecimiento de credenciales para el acceso a la Intranet PUCE y al correo institucional.</li>
+            <li>- Instalación y configuración de software en los equipos de las aulas del área de Informática.</li>
+            <li>- Mantenimiento de Hardware (impresoras y periféricos)</li>
+            <li>- Mantenimiento preventivo y correctivo de laptops institucionales.</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    © 2025 - Proyecto de equipo | Metodología Ágil Scrum PUCE
+</footer>
+</body>
+</html>
