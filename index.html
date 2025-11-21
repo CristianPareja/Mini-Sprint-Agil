@@ -61,6 +61,8 @@
 
   <main class="grid">
     <section id="cv" class="card">
+        <h1>CV</h1>
+
         <h2>Datos personales</h2>
 
         <p><strong>Nombre:</strong> Damian Pillajo</p>
@@ -97,6 +99,52 @@
             <li>- Mantenimiento preventivo y correctivo de laptops institucionales.</li>
         </ul>
     </section>
+    <section class="team-experiences">
+    <h2>Experiencias de Trabajo en Equipo</h2>
+
+    <div class="experience-item">
+        <button class="exp-btn" onclick="toggleExperience('exp-fernando')">
+            Fernando Quiguantar
+        </button>
+        <div id="exp-fernando" class="exp-content">
+            <p>
+                Mi rol como Scrum Master fue clave para que el equipo avanzara. El mayor reto fue un conflicto por los colores del diseño, que resolvimos con una decisión rápida y obligatoria del Product Owner. La presión del tiempo aumentó por la llegada tardía de requerimientos, forzándonos a priorizar las tareas en el tablero.
+                Aprendí que mi función es eliminar obstáculos para que el equipo trabaje. Logramos entregar el CV a tiempo en GitHub aplicando Scrum por primera vez.
+            </p>
+        </div>
+    </div>
+
+    <div class="experience-item">
+        <button class="exp-btn" onclick="toggleExperience('exp-damian')">
+            Damian Pillajo
+        </button>
+        <div id="exp-damian" class="exp-content">
+            <p>
+                Dentro del trabajo en equipo en Scrum desempeñé el rol de Product Owner, encargado de definir y priorizar los requisitos, asegurar la alineación con las necesidades del usuario y mantener una comunicación constante con el equipo.
+                Entre las fortalezas destacó la capacidad de adaptación y la disposición del equipo para coordinar tareas en tiempos limitados. Sin embargo, también enfrentamos dificultades como diferencias en los ritmos de trabajo, problemas de comunicación en algunas etapas y la necesidad de reorganizar prioridades debido a contratiempos técnicos.
+            </p>
+        </div>
+    </div>
+
+    <div class="experience-item">
+        <button class="exp-btn" onclick="toggleExperience('exp-paul')">
+            Paul Pareja
+        </button>
+        <div id="exp-paul" class="exp-content">
+            <p>
+                Mi rol como Dev Team fue emocionante ya que tenía que adaptarme a los requerimientos que me proponía el Product Owner y tratar de llegar al objetivo inicial. Dentro de las complicaciones de mi rol estuvo ignorar la sección de experiencias de trabajo en equipo por un error de comunicación; sin embargo, se atendió a tiempo y se insertó la sección en la página web.
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleExperience(id) {
+        const content = document.getElementById(id);
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    }
+</script>
+
 </main>
 
 <footer class="footer">
